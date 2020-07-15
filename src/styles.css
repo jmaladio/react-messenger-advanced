@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.3;
+  color: #263238;
+  font-family: "Baloo Da 2", sans-serif;
+}
+
+.lista-mensajeros {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.lista-mensajeros__heading {
+  color: #673ab7;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.lista-mensajeros__mensajes {
+  display: flex;
+}
+
+.lista-mensajeros__paragraphs {
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+}
+
+.read {
+  text-decoration: line-through;
+}
+
+.lista-mensajeros__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.mensajero {
+  background-image: linear-gradient(to bottom right, #f0f4c3, #cddc39);
+  border-radius: 2rem;
+  width: 30rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin: 2rem 2rem;
+}
+
+.mensajero__heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #673ab7;
+}
+
+.mensajero__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  height: 9rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mensajero__form input {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.mensajero__form input:focus {
+  outline: none;
+}
+
+.mensajero__form button {
+  border: none;
+  padding: 0.3rem 1rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 10rem;
+  background-color: #673ab7;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.325s ease;
+}
+
+.mensajero__form button:hover {
+  background-color: #8e24aa;
+}
+
+.mensajero__form button:focus {
+  outline: none;
+  transform: translateY(0.2rem);
+}
+
+.mensajes-enviados {
+  padding-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.mensajes-enviados__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #673ab7;
+}
+
+.mensaje {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.mensaje__paragraph {
+  font-weight: 500;
+}
+
+.mensaje__emotes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 5rem;
+}
